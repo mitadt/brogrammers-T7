@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D45FA8E-F31A-4CF0-87B1-C17DCDD0D3FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>fingerpriintbasedatm</RootNamespace>
+    <AssemblyName>fingerpriintbasedatm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addcust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcust.Designer.cs">
+      <DependentUpon>addcust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="merchanthome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="merchanthome.Designer.cs">
+      <DependentUpon>merchanthome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminlogin.Designer.cs">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminscreen.Designer.cs">
+      <DependentUpon>adminscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer.Designer.cs">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbconnection.cs" />
+    <Compile Include="id.cs" />
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MerchantLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MerchantLogin.Designer.cs">
+      <DependentUpon>MerchantLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment.Designer.cs">
+      <DependentUpon>payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="perf_trans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="perf_trans.Designer.cs">
+      <DependentUpon>perf_trans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.designer.cs">
+      <DependentUpon>splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userlogin.Designer.cs">
+      <DependentUpon>userlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="usrhomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="usrhomepage.Designer.cs">
+      <DependentUpon>usrhomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewuserbal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewuserbal.Designer.cs">
+      <DependentUpon>viewuserbal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_cust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_cust.Designer.cs">
+      <DependentUpon>view_cust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_user_trans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_user_trans.Designer.cs">
+      <DependentUpon>view_user_trans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="withdraw1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="withdraw1.Designer.cs">
+      <DependentUpon>withdraw1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addcust.resx">
+      <DependentUpon>addcust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="merchanthome.resx">
+      <DependentUpon>merchanthome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminlogin.resx">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminscreen.resx">
+      <DependentUpon>adminscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer.resx">
+      <DependentUpon>Customer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MerchantLogin.resx">
+      <DependentUpon>MerchantLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="perf_trans.resx">
+      <DependentUpon>perf_trans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userlogin.resx">
+      <DependentUpon>userlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usrhomepage.resx">
+      <DependentUpon>usrhomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewuserbal.resx">
+      <DependentUpon>viewuserbal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_cust.resx">
+      <DependentUpon>view_cust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_user_trans.resx">
+      <DependentUpon>view_user_trans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="withdraw1.resx">
+      <DependentUpon>withdraw1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
